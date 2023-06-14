@@ -46,10 +46,7 @@ def index():
     categories = df.iloc[:, -36:]
     category_sums = categories.sum()
     category_names = list(categories.columns)
-    
-    message_lengths = list(df['message'].str.len())
-    message_no_categories = categories.sum(axis='columns')
-    
+        
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
     graphs = [
@@ -86,24 +83,6 @@ def index():
                 },
                 'xaxis': {
                     'title': "Category"
-                }
-            }
-        },
-        {
-            'data': [
-                Scatter(
-                    x=message_lengths,
-                    y=message_no_categories
-                )
-            ],
-
-            'layout': {
-                'title': 'Message Lengths Against Number of Categories the Message Contains',
-                'yaxis': {
-                    'title': "Number of Categories"
-                },
-                'xaxis': {
-                    'title': "Message Length"
                 }
             }
         }
