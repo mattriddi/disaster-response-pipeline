@@ -6,7 +6,7 @@ Data Science Nanodegree Project
 1. [Installation](#installation)
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#files)
-4. [Results](#results)
+4. [Instructions](#instructions)
 5. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Installation <a name="installation"></a>
@@ -21,7 +21,13 @@ The data folder contains 2 csv files, disaster_messages.csv and disaster_categor
 The models folder contains a python script train_classifier.py. This script takes the file path for the database and a file path for the model. It then creates and trains a classifier - in this case a multi-output classifier using a random forest classifier - which is then stored as a pickle file in the specified model file path location.
 
 The app folder contains a folder of html templates and a python script, run.py. This script runs a web app, which contains 2 visualisations created from the SQLite database, and shows how new messages would be classified by the model.
-## Results <a name="results"></a>
+## Instructions <a name="instructions"></a>
+1 - Run the ETL pipeline - this can be done by running `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db` in the project root directory.
 
+2 - Run the ML pipeline - this can be done by running `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl` in the project root directory.
+
+3 - Run the web app - this can be done by running `python run.py` in the app's directory
+
+4 - View the web app - this can be done by going to http://0.0.0.0:3001/
 ## Licensing, Authors, and Acknowledgements <a name="licensing"></a>
 
