@@ -3,16 +3,13 @@ Data Science Nanodegree Project
 
 ### Table of Contents
 
-1. [Installation](#installation)
-2. [Project Motivation](#motivation)
-3. [File Descriptions](#files)
-4. [Instructions](#instructions)
-5. [Licensing, Authors, and Acknowledgements](#licensing)
+1. [Project Summary](#summary)
+2. [File Descriptions](#files)
+3. [Instructions](#instructions)
+4. [Licensing, Authors, and Acknowledgements](#licensing)
 
-## Installation <a name="installation"></a>
-
-## Project Motivation <a name="motivation"></a>
-In this project I was interested in gaining a better understanding of the process of building ETL, NLP, and Machine Learning pipelines - with the actual model performance being secondary. This project does this by taking two CSV files containing information on messages sent during a disaster event. The relevant pipelines have been built for a machine learning model to then classify these messages.
+## Project Summary <a name="summary"></a>
+In this project I was interested in gaining a better understanding of the process of building ETL, NLP, and Machine Learning pipelines - with the actual model performance being secondary. This project does this by taking two CSV files containing messages sent during a disaster event and the categorisation of these messages respectively. The relevant pipelines have been built for a machine learning model to then classify these messages, and this model has been used within a web app, which displays visuals of the training data and gives the option to classify new messages.
 ## File Descriptions <a name="files"></a>
 Within this repository there are 3 folders: data, models, and app.
 
@@ -30,4 +27,4 @@ The app folder contains a folder of html templates and a python script, run.py. 
 
 4 - View the web app - this can be done by going to http://0.0.0.0:3001/
 ## Licensing, Authors, and Acknowledgements <a name="licensing"></a>
-
+The data used in this project comes courtesy of the Udacity Data Scientist Nanodegree programme, which also provided starter python scripts to begin the project.
